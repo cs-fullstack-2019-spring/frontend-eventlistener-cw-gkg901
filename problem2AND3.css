@@ -1,0 +1,50 @@
+.container{
+    display: grid;
+    grid-template-areas:
+        "header content"
+        "sidebar content"
+        "sidebar footer";
+    grid-template-columns: 1fr 4fr;
+    grid-auto-rows: 100px 1fr;
+    grid-gap: 10px;
+}
+
+
+header,aside,article,footer{
+    border: 2px solid gold;
+    /*background: #ac523e;*/
+}
+
+
+header{
+    grid-area: header;
+}
+
+article{
+    grid-area: content;
+}
+
+aside{
+    grid-area: sidebar;
+}
+
+footer{
+    grid-area: footer;
+}
+
+html,body{
+    height:95%
+}
+
+.blueBackground{
+
+    background: blue;
+}
+
+.redBackground{
+    background: darkred;
+}
+
+.tinyFont{
+    font-size: 1px;
+}
